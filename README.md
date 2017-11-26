@@ -1,4 +1,5 @@
 # PHPUnitTesting
+<<<<<<< HEAD
 
 There are two ways of executing tests.
 1) From Command Line
@@ -12,5 +13,4 @@ There are two ways of executing tests.
         
 2) Executing within IDE. I'm an avid user of NetBeans; however, I'm facing difficulties on integrating the remote PHPUnit
     environment into it so I'm working with PHPStorm now.
-    
-[https://github.com/wdiaz/PHPUnitTesting/blob/master/wiki/images/php_configuration.png]
+    I will post images for reference here later...
