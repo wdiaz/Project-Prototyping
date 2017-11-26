@@ -1,4 +1,14 @@
-# PHPUnitTesting
+# Prototyping
+This project has been created to prototype Software Architectural Designs and Patterns.
+(As well as to stay sharp and up to date). The main idea here is to write clean and readable code.
+
+
+Bibliography:
+Domain Driven Design    - Eric Evans
+Refactoring to Patterns - Joshua Kerievsky 
+
+
+ 
 
 There are two ways of executing tests.
 1) From Command Line
