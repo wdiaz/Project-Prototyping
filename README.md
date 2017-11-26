@@ -1,5 +1,4 @@
 # PHPUnitTesting
-<<<<<<< HEAD
 
 There are two ways of executing tests.
 1) From Command Line
