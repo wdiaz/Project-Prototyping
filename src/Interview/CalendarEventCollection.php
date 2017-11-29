@@ -53,6 +53,15 @@ class CalendarEventCollection
         return array_pop($this->events);
     }
 
+    public function push(EventCalendar $calendar)
+    {
+        try {
+            array_push($this->events, $calendar);
+        } catch (\Exception $ex) {
+            printf("Unable to push object. Error %s\n", $ex->getMessage());
+        }
+        return true;
+    }
     /**
      * @param $data
      * @return bool
