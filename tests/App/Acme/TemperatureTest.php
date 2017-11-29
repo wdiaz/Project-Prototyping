@@ -3,7 +3,6 @@
 namespace App\Acme;
 use PHPUnit\Framework\TestCase;
 use App\Acme\Exception\TemperatureNegativeException;
-use App\Acme\Temperature;
 
 class TemperatureTest extends TestCase
 {
