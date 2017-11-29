@@ -6,17 +6,13 @@ use App\Interview\Exception\InvalidDateTimeException;
 
 class CalendarEventCollectionTest extends TestCase
 {
-
     /**
      * Event cannot be created in the past
      */
     public function testInvalidEventDate()
     {
         $this->expectException(InvalidDateTimeException::class);
-        $input = [
-            ['title'=>'event 1', 'date' => '2015-12-29'],
-            ['title'=>'event 2', 'date' => '2015-12-29']
-        ];
+        $input = [['title'=>'event 2', 'date' => '2017-11-29']];
         new CalendarEventCollection($input);
     }
 
@@ -35,9 +31,7 @@ class CalendarEventCollectionTest extends TestCase
 
     public function testObjectEquality()
     {
-        $input = [
-                    ['title'=>'event 1', 'date'=>'2018-12-29']
-                ];
+        $input = [['title'=>'event 1', 'date'=>'2018-12-29']];
         $collection = new CalendarEventCollection($input);
         $testEvent = new EventCalendar('event 1', new \DateTime('2018-12-29'));
         $event = $collection->pop();
@@ -90,3 +84,4 @@ class CalendarEventCollectionTest extends TestCase
         $this->assertSame('2018-12-29 11:25:30', $event->getDate()->format('Y-m-d H:i:s'));
     }
 }
+
