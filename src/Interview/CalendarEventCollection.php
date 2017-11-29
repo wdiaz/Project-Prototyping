@@ -53,7 +53,12 @@ class CalendarEventCollection
         return array_pop($this->events);
     }
 
-    public function push(EventCalendar $calendar)
+
+    /**
+     * @param EventCalendar $calendar
+     * @return bool
+     */
+    public function push(EventCalendar $calendar) : bool
     {
         try {
             array_push($this->events, $calendar);
@@ -62,6 +67,7 @@ class CalendarEventCollection
         }
         return true;
     }
+
     /**
      * @param $data
      * @return bool
