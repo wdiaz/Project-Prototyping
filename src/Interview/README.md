@@ -1,3 +1,3 @@
-# A whiteboard interview question
+# A Whiteboard Interview Question
 This is a question I was asked on a job interview. This was a whiteboard question and 
-was not required to submitted afterwards. However, I wanted code it. 
+ir was not required to be submitted afterwards. However, I wanted code it for practice purposes only
