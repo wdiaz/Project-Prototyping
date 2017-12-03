@@ -13,7 +13,7 @@ class Order
 
     }
 
-    public function add($item)
+    public function add(Item $item)
     {
         $this->items[] = $item;
     }
@@ -23,7 +23,7 @@ class Order
         $total = 0.0;
         foreach($this->items as $item)
         {
-            $total+=$item->getPrice();
+              $total += $item->getSubTotal();
         }
         return $total;
     }

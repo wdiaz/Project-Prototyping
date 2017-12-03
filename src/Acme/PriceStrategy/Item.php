@@ -25,6 +25,10 @@ class Item
         return $this->strategy->from($this)->getFinalPrice();
     }
 
+    public function getSubTotal()
+    {
+        return $this->quantity * $this->strategy->from($this)->getFinalPrice();
+    }
     public function getSellingPrice()
     {
         return $this->product->getPrice();
