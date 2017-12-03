@@ -1,8 +1,8 @@
 <?php
 
 
-namespace App\Acme\PriceStrategy;
-use App\Acme\PriceStrategy\Pricing\PricingStrategyInterface;
+namespace App\Acme\OrderItem;
+use App\Acme\OrderItem\Pricing\PricingStrategyInterface;
 
 class Item
 {

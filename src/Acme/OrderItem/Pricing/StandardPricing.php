@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Acme\PriceStrategy\Pricing;
+namespace App\Acme\OrderItem\Pricing;
 
 
-use App\Acme\PriceStrategy\Item;
+use App\Acme\OrderItem\Item;
 
 class StandardPricing implements PricingStrategyInterface
 {
@@ -21,6 +21,10 @@ class StandardPricing implements PricingStrategyInterface
         $this->item = $item;
         return $this;
     }
+
+    /** Why is this metod important?
+     * @return float|int
+     */
     public function getFinalPrice()
     {
         return $this->calculateWithFactor($this->item->getCost(), $this->factor);

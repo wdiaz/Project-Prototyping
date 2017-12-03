@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Acme\PriceStrategy;
+namespace App\Acme\OrderItem;
 
 
 class Order
@@ -25,6 +25,6 @@ class Order
         {
               $total += $item->getSubTotal();
         }
-        return $total;
+        return round($total, 2);
     }
 }

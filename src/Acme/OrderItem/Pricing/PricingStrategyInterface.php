@@ -1,5 +1,5 @@
 <?php
-namespace App\Acme\PriceStrategy\Pricing;
+namespace App\Acme\OrderItem\Pricing;
 interface PricingStrategyInterface
 {
 

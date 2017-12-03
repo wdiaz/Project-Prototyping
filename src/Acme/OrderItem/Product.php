@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Acme\PriceStrategy;
+namespace App\Acme\OrderItem;
 
 class Product
 {
