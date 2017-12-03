@@ -34,4 +34,9 @@ class Item
         return $this->product->getCost();
     }
 
+    public function getProduct()
+    {
+        return $this->product;
+    }
+
 }
