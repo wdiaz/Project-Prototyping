@@ -13,7 +13,7 @@ final class ProductTest extends TestCase
     public function testProduct()
     {
         $order = new Order();
-        $order->add(new Item(new Product('Pants', 25.25, 20.25), 4, new StandardPricing(true)));
+        $order->add(new Item(new Product('Pants', 25.25, 20.25), 4, new StandardPricing()));
         $total = $order->getTotal();
         $this->assertEquals(24.30, $total);
     }

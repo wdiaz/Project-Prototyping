@@ -9,14 +9,12 @@ use App\Acme\PriceStrategy\Item;
 class StandardPricing implements PricingStrategyInterface
 {
     const STRATEGY = 'standard';
-    private $factor = 1.20;   // 20%
-    private $item;
-    private $itemPriceOverride;
 
-    public function __construct($itemPriceOverride = false)
-    {
-        $this->itemPriceOverride = $itemPriceOverride;
-    }
+    private $factor = 1.20;   // 20%
+
+    private $item;
+
+    public function __construct(){}
 
     public function from(Item $item)
     {
@@ -25,9 +23,6 @@ class StandardPricing implements PricingStrategyInterface
     }
     public function getFinalPrice()
     {
-        if(! $this->itemPriceOverride) {
-            return $this->item->getSellingPrice();
-        }
         return $this->calculateWithFactor($this->item->getCost(), $this->factor);
     }
 

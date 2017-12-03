@@ -13,7 +13,7 @@ class Item
     private $strategy;
 
 
-    public function __construct($product, $quantity = 1, PricingStrategyInterface $strategy)
+    public function __construct(Product $product, $quantity = 1, PricingStrategyInterface $strategy)
     {
         $this->product = $product;
         $this->strategy = $strategy;
