@@ -19,7 +19,4 @@ There are two ways of executing tests.
         b) The one you use within your operatin system. Normaly located at /usr/local/bin/
            [project_location] phpunit --bootstrap src/Acme/Email.php tests/App/Acme/EmailTest
         
-        
-2) Executing within IDE. I'm an avid user of NetBeans; however, I'm facing difficulties on integrating the remote PHPUnit
-    environment into it so I'm working with PHPStorm now.
-    I will post images for reference here later...
+       
